@@ -1,0 +1,34 @@
+{
+  "name": "rest-emulator",
+  "version": "0.0.1",
+  "description": "Middleware for emulate REST interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/temrdm/rest-emulator.git"
+  },
+  "keywords": [
+    "rest-emulator",
+    "express",
+    "connect",
+    "rest"
+  ],
+  "author": "Artem Pogrebnoy <tem.rdm@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/temrdm/rest-emulator/issues"
+  },
+  "homepage": "https://github.com/temrdm/rest-emulator",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "parseurl": "^1.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-coverage": "^0.3.32",
+    "gulp-jasmine": "^1.0.1"
+  }
+}
