@@ -1,6 +1,6 @@
 {
   "name": "rest-emulator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Middleware for emulate REST interface",
   "main": "index.js",
   "scripts": {
