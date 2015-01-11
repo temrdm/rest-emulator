@@ -11,7 +11,8 @@ var config = [
                 data: [
                     {name: 'Name1'},
                     {name: 'Name2'}
-                ]
+                ],
+                timeout: 5000
             },
             blank: {
                 data: []

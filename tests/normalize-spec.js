@@ -16,7 +16,8 @@ describe('Normalize module.', function () {
                 output = {
                     default: {
                         data: {},
-                        code: 200
+                        code: 200,
+                        timeout: 0
                     }
                 };
                 expect(normalize.getNormalizePresets(input)).toEqual(output);
@@ -38,11 +39,13 @@ describe('Normalize module.', function () {
                         data: {
                             info: 'info'
                         },
-                        code: 200
+                        code: 200,
+                        timeout: 0
                     },
                     blank: {
                         data: {},
-                        code: 200
+                        code: 200,
+                        timeout: 0
                     }
                 };
                 expect(normalize.getNormalizePresets(input)).toEqual(output);
@@ -165,7 +168,8 @@ describe('Normalize module.', function () {
                         GET: {
                             default: {
                                 data: {},
-                                code: 404
+                                code: 404,
+                                timeout: 0
                             }
                         }
                     }
@@ -187,7 +191,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             }
                         }
                     }
@@ -214,11 +219,13 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             },
                             blank: {
                                 data: {},
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             }
                         }
                     }
@@ -242,7 +249,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             }
                         }
                     }
@@ -262,7 +270,8 @@ describe('Normalize module.', function () {
                         GET: {
                             default: {
                                 data: {},
-                                code: 404
+                                code: 404,
+                                timeout: 0
                             }
                         }
                     }
@@ -277,7 +286,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 10
                             }
                         }
                     }
@@ -289,7 +299,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 10
                             }
                         }
                     }
@@ -319,7 +330,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             }
                         },
                         POST: {
@@ -327,7 +339,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     success: true
                                 },
-                                code: 201
+                                code: 201,
+                                timeout: 0
                             }
                         }
                     }
@@ -366,7 +379,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             }
                         },
                         DELETE: {
@@ -374,13 +388,15 @@ describe('Normalize module.', function () {
                                 data: {
                                     success: true
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             },
                             error: {
                                 data: {
                                     success: false
                                 },
-                                code: 401
+                                code: 401,
+                                timeout: 0
                             }
                         }
                     }
@@ -406,7 +422,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     update: true
                                 },
-                                code: 201
+                                code: 201,
+                                timeout: 0
                             }
                         }
                     }
@@ -450,7 +467,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             }
                         }
                     },
@@ -460,7 +478,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             }
                         }
                     },
@@ -470,7 +489,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             }
                         }
                     }
@@ -508,7 +528,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             }
                         }
                     },
@@ -518,7 +539,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             }
                         }
                     },
@@ -528,7 +550,8 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             }
                         }
                     }
@@ -581,15 +604,17 @@ describe('Normalize module.', function () {
                                 data: {
                                     info: 'info'
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             }
                         }
                     },
                     '/api/test2': {
                         GET: {
                             default: {
+                                data: {},
                                 code: 404,
-                                data: {}
+                                timeout: 0
                             }
                         }
                     },
@@ -599,11 +624,13 @@ describe('Normalize module.', function () {
                                 data: {
                                     success: true
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             },
                             error: {
                                 data: {},
-                                code: 404
+                                code: 404,
+                                timeout: 0
                             }
                         }
                     },
@@ -613,17 +640,20 @@ describe('Normalize module.', function () {
                                 data: {
                                     success: true
                                 },
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             },
                             error: {
                                 data: {},
-                                code: 501
+                                code: 501,
+                                timeout: 0
                             }
                         },
                         POST: {
                             default: {
                                 data: {},
-                                code: 401
+                                code: 401,
+                                timeout: 0
                             }
                         }
                     }
@@ -670,7 +700,8 @@ describe('Normalize module.', function () {
                         'GET': {
                             error: {
                                 data: {},
-                                code: 200
+                                code: 200,
+                                timeout: 0
                             }
                         }
                     },
@@ -678,7 +709,8 @@ describe('Normalize module.', function () {
                         'POST': {
                             default: {
                                 data: {},
-                                code: 404
+                                code: 404,
+                                timeout: 0
                             }
                         }
                     }

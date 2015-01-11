@@ -57,7 +57,9 @@ module.exports = {
         data: [
             { name: 'New York' },
             { name: 'Miami' }
-        ]
+        ],
+        code: 200,
+        timeout: 5000
     }
 };
 ```
@@ -77,7 +79,8 @@ module.exports = {
             data: {
                 success: true
             },
-            code: 201
+            code: 201,
+            timeout: 1000
         }
     }
 };
@@ -93,10 +96,14 @@ module.exports = {
                 data: [
                     { name: 'John' },
                     { name: 'Adam' }
-                ]
+                ],
+                code: 200,
+                timeout: 0
             },
             blank: {
-                data: []
+                data: [],
+                code: 200,
+                timeout: 0
             },
             increase: {
                 data: [
@@ -104,7 +111,9 @@ module.exports = {
                     { name: 'Adam' },
                     { name: 'Clark' },
                     { name: 'Earl' }
-                ]
+                ],
+                code: 200,
+                timeout: 0
             }
         },
         POST: {
