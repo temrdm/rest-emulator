@@ -31,9 +31,21 @@ var config = [
         '/api/v1/cities': {
             default: {
                 data: [
-                    {name: 'City1'},
-                    {name: 'City2'}
-                ]
+                    {name: 'City 1'},
+                    {name: 'City 2'}
+                ],
+                query: {
+                    'name=City 1': {
+                        data: [
+                            { name: 'City1' }
+                        ]
+                    },
+                    'name=City 2': {
+                        data: [
+                            { name: 'City2' }
+                        ]
+                    }
+                }
             },
             blank: {
                 data: []

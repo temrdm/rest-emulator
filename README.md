@@ -63,6 +63,18 @@ module.exports = {
             { name: 'New York' },
             { name: 'Miami' }
         ],
+        query: {
+            'name=Miami': {
+                data: [
+                    { name: 'Miami' }
+                ]
+            },
+            'name=New York': {
+                data: [
+                    { name: 'New York' }
+                ]
+            }
+        }
         code: 200,
         timeout: 5000
     }
@@ -78,7 +90,14 @@ module.exports = {
             data: [
                 { name: 'John' },
                 { name: 'Adam' }
-            ]
+            ],
+            query: {
+                'name=John': {
+                    data: [
+                        { name: 'John' }
+                    ]
+                }
+            }
         },
         POST: {
             data: {
@@ -138,7 +157,19 @@ module.exports = {
             data: [
                 { name: 'New York' },
                 { name: 'Miami' }
-            ]
+            ],
+             query: {
+                 'name=Miami': {
+                     data: [
+                         { name: 'Miami' }
+                     ]
+                 },
+                 'name=New York': {
+                     data: [
+                         { name: 'New York' }
+                     ]
+                 }
+             }
         }
     }
 };
