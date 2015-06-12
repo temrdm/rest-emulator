@@ -27,8 +27,9 @@ RestEmulator
     };
 
     var app = express();
+    var restInstance = restEmulator(config);
 
-    app.use(restEmulator(config));
+    app.use(restInstance.middleware);
 
     app.listen(3000);
 

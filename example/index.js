@@ -62,7 +62,8 @@ var config = [
     }
 ];
 
-app.use(restEmulator(config));
+var restInstance = restEmulator(config);
+app.use(restInstance.middleware);
 
 server = app.listen(3000, function () {
     var host = server.address().address;

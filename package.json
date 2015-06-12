@@ -1,6 +1,6 @@
 {
   "name": "rest-emulator",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Middleware for emulate REST interface",
   "main": "index.js",
   "scripts": {
@@ -23,12 +23,12 @@
   },
   "homepage": "https://github.com/temrdm/rest-emulator",
   "dependencies": {
-    "lodash": "^2.4.1",
+    "lodash": "^3.9.3",
     "parseurl": "^1.3.0"
   },
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-coverage": "^0.3.32",
-    "gulp-jasmine": "^1.0.1"
+    "gulp": "^3.9.0",
+    "gulp-coverage": "^0.3.36",
+    "gulp-jasmine": "^2.0.1"
   }
 }
