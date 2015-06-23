@@ -57,7 +57,10 @@ module.exports = {
         data: [
             { name: 'John' },
             { name: 'Adam' }
-        ]
+        ],
+        headers: {
+            ETag: '12345'
+        }
     },
     '/api/cities': {
         data: [
@@ -75,7 +78,7 @@ module.exports = {
                     { name: 'New York' }
                 ]
             }
-        }
+        },
         code: 200,
         timeout: 5000
     }
@@ -92,6 +95,9 @@ module.exports = {
                 { name: 'John' },
                 { name: 'Adam' }
             ],
+            headers: {
+                ETag: '12345'
+            }
             query: {
                 'name=John': {
                     data: [
@@ -128,7 +134,10 @@ module.exports = {
             blank: {
                 data: [],
                 code: 200,
-                timeout: 0
+                timeout: 0,
+                headers: {
+                    ETag: '12345'
+                }
             },
             increase: {
                 data: [

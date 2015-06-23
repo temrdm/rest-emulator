@@ -12,7 +12,10 @@ var config = [
                     {name: 'Name1'},
                     {name: 'Name2'}
                 ],
-                timeout: 5000
+                timeout: 5000,
+                headers: {
+                    ETag: '12345'
+                }
             },
             blank: {
                 data: []
@@ -38,7 +41,10 @@ var config = [
                     'name=City 1': {
                         data: [
                             { name: 'City1' }
-                        ]
+                        ],
+                        headers: {
+                            ETag: '54321'
+                        }
                     },
                     'name=City 2': {
                         data: [
