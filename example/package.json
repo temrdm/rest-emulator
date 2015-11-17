@@ -5,6 +5,8 @@
   "main": "index.js",
   "author": "temrdm",
   "dependencies": {
-    "express": "^4.10.7"
+    "express": "^4.10.7",
+    "body-parser": "^1.14.1",
+    "lodash": "^3.10.1"
   }
 }
