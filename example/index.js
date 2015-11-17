@@ -75,8 +75,17 @@ var config = [{
 }, {
     '/api/v1/body': {
         POST: {
-            body: {
-                foo: 'bar'
+            request: {
+                body: {
+                    foo: 'bar'
+                },
+                error: {
+                    code: 500,
+                    data: {
+                        status: false,
+                        message: 'Custom error message'
+                    }
+                }
             },
             data: {
                 bar: 'foo'
@@ -86,8 +95,13 @@ var config = [{
 }, {
     '/api/v2/body': {
         POST: {
-            body: {
-                foo: '*'
+            request: {
+                body: {
+                    foo: '*'
+                },
+                error: {
+
+                }
             },
             data: {
                 bar: '*'
