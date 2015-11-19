@@ -108,6 +108,14 @@ var config = [{
             }
         }
     }
+}, {
+    '/api/v2/param/:custom': {
+        GET: {
+            data: {
+                custom: 'param'
+            }
+        }
+    }
 }];
 
 var restInstance = restEmulator(config);
