@@ -15,7 +15,7 @@ RestEmulator
 ## Express
 
     var express = require('express');
-    var restEmulator = require('restEmulator');
+    var restEmulator = require('rest-emulator');
 
     var config = {
         '/api/users': {
