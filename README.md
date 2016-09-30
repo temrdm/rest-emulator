@@ -5,10 +5,10 @@ RestEmulator
 
     npm install --save rest-emulator
 
-# Plugins
+# Links
 
 * [Gulp plugin](https://github.com/temrdm/gulp-rest-emulator)
-* [Angular module](https://github.com/temrdm/ng-rest-emulator)
+* [Standalone node server](https://github.com/Pouja/node-rest-emulator)
 
 # Usage
 
