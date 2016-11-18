@@ -1,6 +1,8 @@
 RestEmulator
 ===========
 
+[![NPM](https://nodei.co/npm/rest-emulator.png?downloads=true&downloadRank=true)](https://nodei.co/npm/rest-emulator/)
+
 # Installation
 
     npm install --save rest-emulator
