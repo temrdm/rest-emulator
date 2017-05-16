@@ -186,3 +186,20 @@ module.exports = {
     }
 };
 ```
+
+### With dynamic data
+
+```
+module.exports = {
+    '/api/users': {
+        GET: {
+            data: function(req) {
+	    	return {
+		    name: "John",
+		    timestamp: new Date(),
+		}
+	    }
+        }
+    }
+};
+```
